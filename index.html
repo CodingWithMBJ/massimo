@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Massimo v1</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <!-- <link rel="stylesheet" href="/assets/css/tablet.css" />
+    <link rel="stylesheet" href="/assets/css/desktop.css" /> -->
+    <link rel="stylesheet" href="/assets/css/animation.css" />
+
+    <script
+      src="https://kit.fontawesome.com/880dbed722.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+  </head>
+  <body class="dark-theme">
+    <header id="header" class="header">
+      <a href="#hero" class="logoLink" aria-label="Home">
+        <span class="logo-text">M<span class="xo">assimo</span></span>
+      </a>
+
+      <nav id="nav" class="nav" aria-label="Primary">
+        <ul id="nav-ul" class="nav-ul" role="list"></ul>
+        <ul id="social-ul" class="social-ul" role="list"></ul>
+      </nav>
+
+      <div id="actionMenu" class="actionMenu">
+        <button
+          id="themeBtn"
+          class="themeBtn"
+          aria-label="Toggle color theme"
+          aria-pressed="false"
+          title="Toggle theme"
+        >
+          <span
+            id="themeIndicator"
+            class="themeIndicator"
+            aria-hidden="true"
+          ></span>
+        </button>
+
+        <a href="https://github.com/OneCode-AA" class="hireMe"
+          ><i class="fa-brands fa-github"></i
+          ><span class="hireMe-text">Github</span></a
+        >
+
+        <button
+          id="menuBtn"
+          class="menuBtn"
+          aria-label="Toggle Menu"
+          title="Toggle Menu"
+          aria-expanded="false"
+          aria-controls="nav"
+        >
+          <span class="first"></span><span class="second"></span
+          ><span class="third"></span>
+        </button>
+      </div>
+    </header>
+
+    <main id="main" class="main">
+      <section id="hero" class="hero">
+        <article class="heroContainer">
+          <section class="introduction">
+            <aside class="introCard sectionCard">
+              <div class="introHeader">
+                <div class="introAvatar" aria-hidden="true">MJ</div>
+                <div class="introText">
+                  <h3 class="introName">Mohamed Jalloh</h3>
+                  <p class="introRole">Full-Stack Developer</p>
+                </div>
+              </div>
+              <p class="introBio">
+                I build fast, accessible web apps and clean UI systems.
+                Currently exploring React/Next.js, Node.js, and modern CSS.
+              </p>
+              <ul id="intro-socials" class="introSocials"></ul>
+            </aside>
+          </section>
+        </article>
+      </section>
+
+      <section id="about" class="about">
+        <article class="sectionContainer">
+          <h2 class="sectionTitle">About Me</h2>
+          <section class="subContainer">
+            <article class="about-text">
+              <p>
+                I am a <strong>self-taught Full-Stack Developer</strong> with a
+                strong foundation in both frontend and backend development. I
+                enjoy building responsive, user-friendly interfaces using
+                <strong>HTML, CSS, JavaScript, React.js, and Next.js</strong>,
+                while also developing robust backend solutions with
+                <strong>Node.js, Express.js, and MongoDB</strong>.
+              </p>
+              <p>
+                My journey as a developer has been fueled by curiosity and
+                dedication, gaining practical knowledge from
+                <span class="xox">CourseCareer</span> and
+                <span class="xox">Coursera</span>, and applying it through
+                hands-on projects that reflect real-world software development
+                practices.
+              </p>
+              <p>
+                Passionate about continuous learning and problem-solving, I
+                strive to deliver efficient, impactful solutions and contribute
+                effectively in collaborative team environments.
+              </p>
+            </article>
+          </section>
+        </article>
+      </section>
+
+      <section id="experience" class="experience">
+        <article class="sectionContainer">
+          <h2 class="sectionTitle">Where I've Worked</h2>
+          <section class="experienceGrid">
+            <aside
+              id="expTabs"
+              class="expTabs"
+              role="tablist"
+              aria-label="Companies"
+            ></aside>
+            <div
+              id="expPanel"
+              class="expPanel"
+              role="tabpanel"
+              tabindex="0"
+            ></div>
+          </section>
+        </article>
+      </section>
+
+      <section id="projects" class="projects">
+        <article class="sectionContainer">
+          <h2 class="sectionTitle">Some Things I've Built</h2>
+          <section id="projectsContainer" class="subContainer"></section>
+        </article>
+      </section>
+
+      <section id="skills" class="skills">
+        <article class="sectionContainer">
+          <h2 class="sectionTitle">My Skills</h2>
+          <section class="skill-header">
+            <button id="toggleTechnical" class="active skillBtn">
+              Technical Skills
+            </button>
+            <button id="toggleSoft" class="skillBtn">Soft Skills</button>
+          </section>
+          <section id="skillsContainer" class="subContainer"></section>
+        </article>
+      </section>
+
+      <section id="blog" class="blog">
+        <article class="sectionContainer">
+          <h2 class="sectionTitle">My Blog</h2>
+          <section id="blogContainer" class="subContainer"></section>
+        </article>
+      </section>
+
+      <section id="contact" class="contact">
+        <article class="sectionContainer">
+          <h2 class="sectionTitle">Get In Touch</h2>
+          <section class="contactCard">
+            <p class="contactLead">Let’s build something great.</p>
+            <p class="contactCopy">
+              I’m open to freelance, internships, or full-time opportunities. If
+              you have a project or just want to say hi, my inbox is open.
+            </p>
+            <a
+              id="contactBtn"
+              class="contactBtn"
+              href="mailto:mohamed.jalloh91@gmail.com"
+              >Say Hello</a
+            >
+          </section>
+        </article>
+      </section>
+    </main>
+    <footer id="footer" class="footer">
+      <p>Mohamed Jalloh &copy; 2025 . All rights reserved.</p>
+    </footer>
+    <script src="/assets/js/script.js" defer></script>
+  </body>
+</html>

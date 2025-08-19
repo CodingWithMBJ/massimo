@@ -1,0 +1,44 @@
+{
+  "projects": [
+    {
+      "name": "Plan Ahead App",
+      "description": "An ordering portal built for a former employer to coordinate store needs with DSPs. Features include store/admin login, item selection, checkout, and an email receipt system using Resend.com API. UI developed with Next.js for a responsive and intuitive experience.",
+      "techStack": ["React.js", "Next.js", "API", "Resend.com"],
+      "image": "/assets/imgs/plan-ahead.png",
+      "liveLink": "https://your-live-link.com",
+      "sourceCode": "https://github.com/your-repo"
+    },
+    {
+      "name": "M.A.J General Maintenance Landing Page",
+      "description": "A landing page for M.A.J General Maintenance LLC, including hero, services, testimonials, and contact sections. Integrated an emailing API that sends messages to the owner when a visitor submits the contact form.",
+      "techStack": ["HTML", "CSS", "JavaScript", "Email API"],
+      "image": "/assets/imgs/maj-landing.png",
+      "liveLink": "https://your-live-link.com",
+      "sourceCode": "https://github.com/your-repo"
+    },
+    {
+      "name": "",
+      "description": "",
+      "techStack": [],
+      "image": "",
+      "liveLink": "",
+      "sourceCode": ""
+    },
+    {
+      "name": "",
+      "description": "",
+      "techStack": [],
+      "image": "",
+      "liveLink": "",
+      "sourceCode": ""
+    },
+    {
+      "name": "",
+      "description": "",
+      "techStack": [],
+      "image": "",
+      "liveLink": "",
+      "sourceCode": ""
+    }
+  ]
+}

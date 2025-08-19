@@ -1,0 +1,19 @@
+{
+  "navLinks": [
+    { "name": "Home", "href": "#hero", "icon": "fa-solid fa-house" },
+    { "name": "About", "href": "#about", "icon": "fa-solid fa-address-card" },
+    {
+      "name": "Experience",
+      "href": "#experience",
+      "icon": "fa-solid fa-building"
+    },
+    { "name": "Projects", "href": "#projects", "icon": "fa-solid fa-code" },
+    { "name": "Skills", "href": "#skills", "icon": "fa-solid fa-code-branch" },
+    { "name": "Blogs", "href": "#blog", "icon": "fa-solid fa-blog" },
+    {
+      "name": "Contact",
+      "href": "#contact",
+      "icon": "fa-solid fa-address-book"
+    }
+  ]
+}
