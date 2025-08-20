@@ -1,19 +1,70 @@
 {
-  "navLinks": [
-    { "name": "Home", "href": "#hero", "icon": "fa-solid fa-house" },
-    { "name": "About", "href": "#about", "icon": "fa-solid fa-address-card" },
+  "Links": [
     {
-      "name": "Experience",
-      "href": "#experience",
-      "icon": "fa-solid fa-building"
+      "navLinks": [
+        { "name": "Home", "href": "#hero", "icon": "fa-solid fa-house" },
+        {
+          "name": "About",
+          "href": "#about",
+          "icon": "fa-solid fa-address-card"
+        },
+        {
+          "name": "Experience",
+          "href": "#experience",
+          "icon": "fa-solid fa-building"
+        },
+        { "name": "Projects", "href": "#projects", "icon": "fa-solid fa-code" },
+        {
+          "name": "Skills",
+          "href": "#skills",
+          "icon": "fa-solid fa-code-branch"
+        },
+        { "name": "Blogs", "href": "#blog", "icon": "fa-solid fa-blog" },
+        {
+          "name": "Contact",
+          "href": "#contact",
+          "icon": "fa-solid fa-address-book"
+        }
+      ]
     },
-    { "name": "Projects", "href": "#projects", "icon": "fa-solid fa-code" },
-    { "name": "Skills", "href": "#skills", "icon": "fa-solid fa-code-branch" },
-    { "name": "Blogs", "href": "#blog", "icon": "fa-solid fa-blog" },
     {
-      "name": "Contact",
-      "href": "#contact",
-      "icon": "fa-solid fa-address-book"
+      "socialLinks": [
+        {
+          "name": "Email",
+          "icon": "fa-solid fa-at",
+          "link": "mohamed.jalloh91@gmail.com"
+        },
+        {
+          "name": "LinkedIn",
+          "icon": "fa-brands fa-linkedin-in",
+          "link": "https://www.linkedin.com/in/abooabdillaahmbj/"
+        },
+        {
+          "name": "GitHub",
+          "icon": "fa-brands fa-github",
+          "link": "https://github.com/OneCode-AA"
+        },
+        {
+          "name": "Codepen",
+          "icon": "fa-brands fa-codepen",
+          "link": "https://codepen.io/thetwomigrations"
+        },
+        {
+          "name": "",
+          "icon": "",
+          "link": ""
+        },
+        {
+          "name": "",
+          "icon": "",
+          "link": ""
+        },
+        {
+          "name": "",
+          "icon": "",
+          "link": ""
+        }
+      ]
     }
   ]
 }
