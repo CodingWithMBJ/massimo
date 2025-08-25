@@ -2,13 +2,13 @@
   "jobs": [
     {
       "company": "New Vision Foundation",
-      "company-alias": "NVF",
+      "companyAlias": "NVF",
       "title": "Coding Instructor Intern",
       "location": "Saint Paul, MN",
       "duration": [
         {
-          "start-date": "April 2025",
-          "end-date": "",
+          "startDate": "April 2025",
+          "endDate": "",
           "stillEmployed?": true
         }
       ],
@@ -25,13 +25,13 @@
     },
     {
       "company": "Upwork",
-      "company-alias": "Upwork",
+      "companyAlias": "Upwork",
       "title": "Frontend Developer Freelancer",
       "location": "Remote",
       "duration": [
         {
-          "start-date": "March 2024",
-          "end-date": "April 2025",
+          "startDate": "March 2024",
+          "endDate": "April 2025",
           "stillEmployed?": false
         }
       ],

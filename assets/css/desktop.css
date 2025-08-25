@@ -1,16 +1,45 @@
 @media (min-width: 1024px) {
-    .nav, .nav-ul, .nav-li, .nav-li-a, .nav-li-a::after {
-        all: unset;
-    }
 
-    .nav-ul {
+    .header {
+        position: fixed;
+        top: 1;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 15px 10px;
+        width: 100%;
+        max-width: 1200px;
         display: flex;
-        gap: 1em;
+        justify-content: space-between;
+        align-items: center;
+        background: transparent;
+        transition: var(--ease-med);
+        z-index: 4;
+        overflow-y: visible;
     }
 
-    .nav-li-a {
-        display: block;
-        padding: 1rem;
-        cursor: pointer;
+    .header.active {
+        background: var(--bg-secondary);
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
     }
+
+    .header.scrollingUp {
+        transform: translateY(-20vh);
+    }
+
+    .actionMenu {
+        padding: 10px;
+        position: relative;
+        width: fit-content;
+        max-width: 150px;
+    }
+
+    .menuBtn {
+        order: 1;
+    }
+
+
+
+
+
+
 }

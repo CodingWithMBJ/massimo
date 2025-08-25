@@ -15,6 +15,15 @@
       src="https://kit.fontawesome.com/880dbed722.js"
       crossorigin="anonymous"
     ></script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </head>
   <body id="" class="">
     <header id="header" class="header">
@@ -22,22 +31,11 @@
         <span class="logo-text">M<span class="xo">assimo</span></span>
       </a>
 
-      <nav id="nav" class="nav" aria-label="Primary-Nav">
-        <ul id="nav-ul" class="nav-ul" role="list"></ul>
-        <ul id="social-ul" class="social-ul" role="social-list"></ul>
-      </nav>
-
       <div id="actionMenu" class="actionMenu">
-        <button
-          id="themeBtn"
-          class="themeBtn"
-          aria-label="Toggle color theme"
-          aria-pressed="false"
-          title="Toggle theme"
-        >
-          <span id="themeIndicator" class="themeIndicator" aria-hidden="true">
-          </span>
-        </button>
+        <nav id="nav" class="nav" aria-label="Primary-Nav">
+          <ul id="nav-ul" class="nav-ul" role="list"></ul>
+          <ul id="social-ul" class="social-ul" role="social-list"></ul>
+        </nav>
 
         <!-- <a href="https://github.com/OneCode-AA" class="hireMe"
           ><i class="fa-brands fa-github"></i
@@ -112,17 +110,41 @@
       <section id="experience" class="experience">
         <article class="sectionContainer">
           <h2 class="sectionTitle">Where I've Worked</h2>
-          <section class="subContainer expContainer"></section>
+          <section class="subContainer expContainer">
+            <article class="expSidebar">
+              <ul
+                id="companyTabs"
+                class="company-tabs"
+                role="tablist"
+                aria-label="Companies"
+              ></ul>
+            </article>
+
+            <article
+              id="jobPanel"
+              class="job-panel"
+              role="region"
+              aria-live="polite"
+            ></article>
+          </section>
         </article>
       </section>
 
       <section id="projects" class="projects">
         <article class="sectionContainer">
           <h2 class="sectionTitle">Some Things I've Built</h2>
-          <section
-            id="myWorks"
-            class="subContainer projectsContainer"
-          ></section>
+          <section id="myWorks" class="subContainer projectsContainer">
+            <article
+              id="projectTabs"
+              class="project-tabs"
+              role="tablist"
+              aria-label="projects"
+            ></article>
+            <article
+              id="project-card-container"
+              class="project-card-container"
+            ></article>
+          </section>
         </article>
       </section>
 
