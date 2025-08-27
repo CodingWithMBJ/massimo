@@ -377,6 +377,7 @@ button {
 /* =========================
    HERO / INTRO
    ========================= */
+
 .introCard {
     width: 100%;
     min-height: 60vh;
@@ -568,6 +569,7 @@ button {
 .project-tab.active {
     background: var(--bg-tertiary);
     border-left: 3px solid var(--logo-brand-color);
+    border-right: 3px solid var(--logo-brand-color);
 }
 
 .projectCard {
@@ -575,7 +577,7 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 2rem;
     position: relative;
     margin: 2rem 0;
     border: 1px solid var(--border-color);
@@ -588,6 +590,26 @@ button {
     width: 100%;
     height: auto;
     border-radius: 1rem;
+}
+
+.tech-list {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    justify-content: center;
+
+}
+
+.tech-list li {
+    border: none;
+    padding: 5px 8px;
+    border-radius: 2rem;
+    background: var(--text-primary);
+    color: var(--bg-primary);
+
+
+
 }
 
 .links-flex {
@@ -661,12 +683,15 @@ button {
     padding: 1rem;
     background: var(--bg-secondary);
     width: 100%;
+
+
 }
 
 .skill-group-title {
     margin: 0 0 .75rem;
     font-size: 1rem;
     opacity: .9;
+    text-align: center;
 }
 
 /* lists */
@@ -680,6 +705,7 @@ button {
 .skill-item {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: .6rem;
     min-height: 44px;
     padding: .5rem .65rem;
@@ -726,7 +752,7 @@ button {
     min-height: 260px;
     transform-style: preserve-3d;
     border-radius: 1rem;
-    overflow: hidden;
+    overflow: visible;
     transform: rotateY(0deg);
     /* default */
 }
@@ -754,9 +780,8 @@ button {
     transform: rotateY(180deg);
     display: flex;
     align-items: center;
-    justify-content: center;
-    background: var(--bg-secondary);
-    border: 1px solid var(--border-color);
+    justify-content: start;
+    background: transparent;
     padding: 1rem;
     color: var(--text-primary);
 }
@@ -780,6 +805,7 @@ button {
 /* One shared hero toggle (inside #heroCard; does NOT flip) */
 #heroCard {
     position: relative;
+
 }
 
 /* ensure positioning context */

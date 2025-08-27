@@ -64,4 +64,11 @@
         top: 120px;
         left: 0;
     }
+
+
+    .skill-item {
+
+        justify-content: unset;
+
+    }
 }
