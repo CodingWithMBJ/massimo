@@ -39,4 +39,16 @@
         max-width: 992px;
 
     }
+
+
+    .flip-front {
+        position: relative;
+    }
+
+    .projectCard {
+        justify-content: space-between;
+        min-height: 70vh;
+        margin: auto;
+    }
+
 }

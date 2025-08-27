@@ -24,12 +24,13 @@
 
     :where(.hero, .about, .experience, .projects, .skills, .blog, .contact) {
 
-        max-width: 700px;
+        max-width: 800px;
 
     }
 
     .heroContainer, .sectionContainer {
 
+        width: 100%;
         max-width: 800px;
 
     }
@@ -51,6 +52,7 @@
 
     #projectCard .projectCard {
         margin-bottom: 1rem;
+
     }
 
     .project-tab {
