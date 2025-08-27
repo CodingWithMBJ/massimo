@@ -53,6 +53,10 @@
         margin-bottom: 1rem;
     }
 
+    .project-tab {
+        display: unset;
+    }
+
     .links-flex .infoBox {
         display: none !important;
     }

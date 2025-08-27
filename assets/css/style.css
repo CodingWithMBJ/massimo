@@ -326,7 +326,7 @@ button {
     align-items: center;
 }
 
-:where(.hero, .about, .experience, .projects, .skills, .blog, .contact) {
+:where(.hero, .about, .experience, .projects, .skills, .contact) {
     width: 100%;
     min-height: 90vh;
     padding-block: 2rem;
@@ -335,12 +335,16 @@ button {
     flex-direction: column;
 }
 
-.hero .about {
+.hero .about, .blog {
     min-height: 50vh;
 }
 
 :where(.hero, .about, .experience, .projects) {
     justify-content: center;
+}
+
+.contact .sectionContainer {
+    gap: 4rem;
 }
 
 .sectionTitle {
@@ -560,6 +564,7 @@ button {
     font: inherit;
     color: var(--text-primary);
     outline-offset: 2px;
+    display: none;
 }
 
 .project-tab:hover {
@@ -705,7 +710,6 @@ button {
 .skill-item {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     gap: .6rem;
     min-height: 44px;
     padding: .5rem .65rem;
@@ -734,6 +738,8 @@ button {
 .skill-name {
     line-height: 1.2;
 }
+
+
 
 /* =========================
    FLIP SYSTEM (shared)
@@ -848,6 +854,13 @@ button {
     overflow: hidden;
     clip: rect(1px, 1px, 1px, 1px);
     white-space: nowrap;
+}
+
+
+
+.blog h3 {
+
+    font-size: 2rem;
 }
 
 /* =========================
