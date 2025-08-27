@@ -5,17 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Massimo v1</title>
 
+    <!-- Base CSS -->
     <link rel="stylesheet" href="/assets/css/style.css" />
+    <!-- Breakpoint overrides -->
     <link rel="stylesheet" href="/assets/css/tablet.css" />
-
     <link rel="stylesheet" href="/assets/css/desktop.css" />
+    <!-- Animations -->
     <link rel="stylesheet" href="/assets/css/animation.css" />
 
+    <!-- Icons -->
     <script
       src="https://kit.fontawesome.com/880dbed722.js"
       crossorigin="anonymous"
     ></script>
-
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
@@ -25,7 +27,8 @@
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
   </head>
-  <body id="" class="">
+
+  <body>
     <header id="header" class="header">
       <a href="#hero" class="logoLink" aria-label="Home">
         <span class="logo-text">M<span class="xo">assimo</span></span>
@@ -36,11 +39,6 @@
           <ul id="nav-ul" class="nav-ul" role="list"></ul>
           <ul id="social-ul" class="social-ul" role="social-list"></ul>
         </nav>
-
-        <!-- <a href="https://github.com/OneCode-AA" class="hireMe"
-          ><i class="fa-brands fa-github"></i
-          ><span class="hireMe-text">Github</span></a
-        > -->
 
         <button
           id="menuBtn"
@@ -57,56 +55,38 @@
     </header>
 
     <main id="main" class="main">
+      <!-- HERO -->
       <section id="hero" class="hero">
         <article class="heroContainer sectionContainer">
-          <section class="introduction introCard sectionCard subContainer">
-            <article class="introHeader">
-              <section class="introAvatar" aria-hidden="true">MJ</section>
-              <section class="introText">
-                <h3 class="introName">Mohamed Jalloh</h3>
-                <p class="introRole">Full-Stack Developer</p>
+          <section
+            id="heroCard"
+            class="flip-card introCard sectionCard subContainer"
+          >
+            <article class="flip-card-inner">
+              <section class="flip-card-front heroFront">
+                <article class="introHeader">
+                  <aside class="introAvatar" aria-hidden="true">MJ</aside>
+                  <section class="introText">
+                    <h3 class="introName">Mohamed Jalloh</h3>
+                    <p class="introRole">Full-Stack Developer</p>
+                  </section>
+                </article>
+                <p class="introBio">
+                  I build fast, accessible web apps and clean UI systems.
+                  Currently exploring React/Next.js, Node.js, and modern CSS.
+                </p>
+                <ul id="hero-social-ul" class="hero-social-ul"></ul>
               </section>
+              <!-- About back is injected on <1024px -->
             </article>
-            <p class="introBio">
-              I build fast, accessible web apps and clean UI systems. Currently
-              exploring React/Next.js, Node.js, and modern CSS.
-            </p>
-            <ul id="hero-social-ul" class="hero-social-ul"></ul>
+            <!-- One shared toggle button is injected here (inside #heroCard, outside inner) on <1024px -->
           </section>
         </article>
       </section>
 
-      <section id="about" class="about">
-        <article class="sectionContainer">
-          <h2 class="sectionTitle">About Me</h2>
-          <section class="subContainer aboutContainer">
-            <article class="about-text">
-              <p>
-                I am a <strong>self-taught Full-Stack Developer</strong> with a
-                strong foundation in both frontend and backend development. I
-                enjoy building responsive, user-friendly interfaces using
-                <strong>HTML, CSS, JavaScript, React.js, and Next.js</strong>,
-                while also developing robust backend solutions with
-                <strong>Node.js, Express.js, and MongoDB</strong>.
-              </p>
-              <p>
-                My journey as a developer has been fueled by curiosity and
-                dedication, gaining practical knowledge from
-                <span class="xox">CourseCareer</span> and
-                <span class="xox">Coursera</span>, and applying it through
-                hands-on projects that reflect real-world software development
-                practices.
-              </p>
-              <p>
-                Passionate about continuous learning and problem-solving, I
-                strive to deliver efficient, impactful solutions and contribute
-                effectively in collaborative team environments.
-              </p>
-            </article>
-          </section>
-        </article>
-      </section>
+      <!-- ABOUT injected before #experience on ≥1024px -->
 
+      <!-- EXPERIENCE -->
       <section id="experience" class="experience">
         <article class="sectionContainer">
           <h2 class="sectionTitle">Where I've Worked</h2>
@@ -119,7 +99,6 @@
                 aria-label="Companies"
               ></ul>
             </article>
-
             <article
               id="jobPanel"
               class="job-panel"
@@ -130,6 +109,7 @@
         </article>
       </section>
 
+      <!-- PROJECTS -->
       <section id="projects" class="projects">
         <article class="sectionContainer">
           <h2 class="sectionTitle">Some Things I've Built</h2>
@@ -148,6 +128,7 @@
         </article>
       </section>
 
+      <!-- SKILLS -->
       <section id="skills" class="skills">
         <article class="sectionContainer">
           <h2 class="sectionTitle">My Skills</h2>
@@ -158,11 +139,13 @@
               </button>
               <button id="toggleSoft" class="skillBtn">Soft Skills</button>
             </article>
+
+            <article id="skillsContainer" class="skillsContainer"></article>
           </section>
-          <section id="skillsContainer" class="skillsContainer"></section>
         </article>
       </section>
 
+      <!-- BLOG -->
       <section id="blog" class="blog">
         <article class="sectionContainer">
           <h2 class="sectionTitle">My Blog</h2>
@@ -173,6 +156,7 @@
         </article>
       </section>
 
+      <!-- CONTACT -->
       <section id="contact" class="contact">
         <article class="sectionContainer">
           <h2 class="sectionTitle">Get In Touch</h2>
@@ -192,9 +176,13 @@
         </article>
       </section>
     </main>
+
     <footer id="footer" class="footer">
       <p>Mohamed Jalloh &copy; 2025 . All rights reserved.</p>
     </footer>
+
+    <!-- JS -->
     <script src="/assets/js/script.js" defer></script>
+    <script src="/assets/js/scroll-animations.js" defer></script>
   </body>
 </html>

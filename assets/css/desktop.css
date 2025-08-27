@@ -1,8 +1,6 @@
 @media (min-width: 1024px) {
-
     .header {
         position: fixed;
-        top: 1;
         left: 50%;
         transform: translateX(-50%);
         padding: 15px 10px;
@@ -11,20 +9,12 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background: transparent;
-        transition: var(--ease-med);
-        z-index: 4;
-        overflow-y: visible;
-    }
-
-    .header.active {
-        background: var(--bg-secondary);
-        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
     }
 
     .header.scrollingUp {
-        transform: translateY(-20vh);
+        transform: translate(-50%, -20vh);
     }
+
 
     .actionMenu {
         padding: 10px;
@@ -37,9 +27,16 @@
         order: 1;
     }
 
+    .themeBtn {
+        position: fixed;
+        top: 94vh;
+        right: 2vw;
+    }
 
 
+    :where(.hero, .about, .experience, .projects, .skills, .blog, .contact) {
 
+        max-width: 992px;
 
-
+    }
 }
