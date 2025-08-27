@@ -83,6 +83,11 @@ button {
     display: none;
 }
 
+.xox {
+    font-weight: 700;
+    color: dodgerblue;
+}
+
 /* =========================
    HEADER & NAV
    ========================= */
@@ -205,19 +210,19 @@ button {
 .menuBtn.opened .first {
     transform: translate(0, 0) rotate(45deg);
     opacity: 1;
-    animation: first 1s ease-in-out;
+    animation: first 750ms ease-in-out;
 }
 
 .menuBtn.opened .second {
     transform: scaleX(0);
     opacity: 0;
-    animation: second 1s ease-in-out;
+    animation: second 750ms ease-in-out;
 }
 
 .menuBtn.opened .third {
     transform: translate(0, 0) rotate(-45deg);
     opacity: 1;
-    animation: third 1s ease-in-out;
+    animation: third 750ms ease-in-out;
 }
 
 /* ====== end hamburger ====== */
@@ -368,10 +373,12 @@ button {
     align-items: center;
     max-width: 600px;
     min-width: 100%;
+
 }
 
 .subContainer {
     padding-top: 3.5em;
+
 }
 
 .sectionCard {
@@ -396,6 +403,7 @@ button {
     border-radius: 2rem;
     background: var(--bg-secondary);
 }
+
 
 .introHeader {
     display: flex;
@@ -518,6 +526,7 @@ button {
     border-radius: .75rem;
     padding: 1rem;
     background: var(--bg-secondary);
+
 }
 
 .job-title {
@@ -790,6 +799,7 @@ button {
     background: transparent;
     padding: 1rem;
     color: var(--text-primary);
+    margin: auto;
 }
 
 /* Disable clicks on the hidden side */

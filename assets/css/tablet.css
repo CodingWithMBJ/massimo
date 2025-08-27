@@ -35,7 +35,7 @@
     }
 
     .subContainer {
-        min-width: 800px;
+        min-width: 100%;
     }
 
     .expContainer, .projectsContainer, .skills .subContainer {
