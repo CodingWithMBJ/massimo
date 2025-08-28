@@ -22,11 +22,13 @@
         transform: translateX(0);
     }
 
-    :where(.hero, .about, .experience, .projects, .skills, .blog, .contact) {
 
+    :where(#hero, #about, #experience, #projects, #skills, #blog, #contact) {
         max-width: 800px;
-
+        width: 90vw;
+        min-height: 90vh;
     }
+
 
     .heroContainer, .sectionContainer {
 
@@ -37,6 +39,7 @@
 
     .subContainer {
         min-width: 100%;
+        text-align: center;
     }
 
     .expContainer, .projectsContainer, .skills .subContainer {

@@ -532,9 +532,9 @@ window.addEventListener("DOMContentLoaded", () => {
       aboutSection = document.createElement("section");
       aboutSection.id = "about";
       aboutSection.innerHTML = `
-        <article class="aboutContainer">
+        <article class="aboutContainer-mobile aboutContainer-desktop">
           <h2 class="sectionTitle">About Me</h2>
-          <section class="action-subContainer">
+          <section class="about-subContainer about-subContainer-mobile">
            <article class="about-text"> 
            <p> I am a <strong>self-taught Full-Stack Developer</strong> with a strong foundation in both frontend and backend development. I enjoy building responsive, user-friendly interfaces using <strong>HTML, CSS, JavaScript, React.js, and Next.js</strong>, while also developing robust backend solutions with <strong>Node.js, Express.js, and MongoDB</strong>. </p> <p> My journey as a developer has been fueled by curiosity and dedication, gaining practical knowledge from <a href="https://coursecareers.com/"><span class="xox">CourseCareer</span></a> and <a href="https://www.coursera.org/"><span class="xox">Coursera</span></a>, and applying it through hands-on projects that reflect real-world software development practices. </p> <p> Passionate about continuous learning and problem-solving, I strive to deliver efficient, impactful solutions and contribute effectively in collaborative team environments. 
            </p> 
