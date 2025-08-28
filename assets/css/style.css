@@ -325,7 +325,7 @@ button {
 .main {
     min-height: 100vh;
     width: 100%;
-    padding: 70px 0;
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -333,18 +333,35 @@ button {
 
 :where(.hero, .about, .experience, .projects, .skills, .contact) {
     width: 100%;
-    min-height: 90vh;
+    height: 100%;
     padding-block: 2rem;
     padding-inline: .6rem;
     display: flex;
+}
+
+:where(.about, .projects, .skills, .contact) {
+    min-height: 100vh;
+    height: 100%;
     flex-direction: column;
 }
 
-.hero .about, .blog {
-    min-height: 50vh;
+
+:where(.experience) {
+    min-height: 70vh;
+
 }
 
-:where(.hero, .about, .experience, .projects) {
+
+
+
+.blog {
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+:where(.about, .experience, .projects) {
     justify-content: center;
 }
 
@@ -366,19 +383,34 @@ button {
     left: 0;
 }
 
-.heroContainer, .sectionContainer {
+.sectionContainer {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     max-width: 600px;
     min-width: 100%;
 
 }
 
+.aboutContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-inline: 1rem;
+
+}
+
 .subContainer {
     padding-top: 3.5em;
+}
 
+.projectsContainer {
+    padding-top: 1.5rem;
+}
+
+.action-subContainer {
+    padding-top: 1.5em;
 }
 
 .sectionCard {
@@ -389,20 +421,23 @@ button {
    HERO / INTRO
    ========================= */
 
-.introCard {
-    width: 100%;
-    min-height: 60vh;
-    max-width: 600px;
+
+.hero {
+    min-height: 80vh;
+}
+
+
+.heroCard {
+    position: relative;
+    min-height: fit-content;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    margin-top: 1.25rem;
-    padding: 16px;
-    border: 1px solid var(--border-color);
-    border-radius: 2rem;
-    background: var(--bg-secondary);
+    max-height: 500px;
+    max-width: 600px;
+    min-width: 100%;
 }
+
+
 
 
 .introHeader {
@@ -761,10 +796,17 @@ button {
     perspective: 1000px;
 }
 
+
+.flip-inner {
+
+    min-height: 260px;
+    /* default */
+}
+
+
 .flip-inner, .flip-card .flip-card-inner {
     position: relative;
     width: 100%;
-    min-height: 260px;
     transform-style: preserve-3d;
     border-radius: 1rem;
     overflow: visible;
@@ -772,9 +814,15 @@ button {
     /* default */
 }
 
-.hero :is(.flip-inner, .flip-card .flip-card-inner) {
-    min-height: 300px;
+.flip-card .flip-card-inner {
+
+    min-height: fit-content;
+    /* default */
 }
+
+/* .hero :is(.flip-inner, .flip-card .flip-card-inner) {
+    min-height: 300px;
+} */
 
 .flip-inner.flipped, .flip-card-inner.flipped {
     transform: rotateY(180deg);
@@ -782,24 +830,65 @@ button {
 
 .flip-front, .flip-back, .flip-card-front, .flip-card-back {
     position: absolute;
-    inset: 0;
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
 }
+
+.flip-front, .flip-back {
+    inset: 0;
+}
+
 
 .flip-front, .flip-card-front {
     transform: rotateY(0deg);
 }
 
+
+.flip-card-front {
+    width: 100%;
+    min-height: 40vh;
+
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: flex-start;
+    margin-top: 1.25rem;
+    padding: 16px;
+    border: 1px solid var(--border-color);
+    border-radius: 2rem;
+    background: var(--bg-secondary);
+}
+
 .flip-back, .flip-card-back {
+
     transform: rotateY(180deg);
     display: flex;
-    align-items: center;
-    justify-content: start;
+    color: var(--text-primary);
+    /* margin: auto; */
+    background: var(--bg-secondary);
+
+}
+
+
+
+.flip-card-back {
+    min-height: 400px;
+    color: var(--text-primary);
+    margin: auto;
+    background: var(--bg-secondary);
+    border-radius: 2rem;
+}
+
+.flip-back {
+    min-height: max-content;
     background: transparent;
+    align-items: center;
+    justify-content: center;
     padding: 1rem;
     color: var(--text-primary);
     margin: auto;
+    background: var(--bg-secondary);
+
 }
 
 /* Disable clicks on the hidden side */
