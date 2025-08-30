@@ -67,7 +67,7 @@ body {
     color: var(--text-primary);
     transition: background var(--ease-med), color var(--ease-med);
     font-family: "Montserrat", sans-serif;
-    overflow-x: hidden;
+    overflow: auto;
     padding: 10px 0;
 }
 
@@ -97,21 +97,26 @@ button {
     left: 0;
     padding: 15px 10px;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     background: transparent;
     transition: var(--ease-med);
     z-index: 4;
 }
 
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
 .header.active {
+    padding-block: 12px;
     background: var(--bg-secondary);
     box-shadow: 0 6px 18px rgba(0, 0, 0, .18);
 }
 
 .header.scrollingUp {
-    transform: translateY(-40vh);
+    top: -40vh;
 }
 
 .logoLink {
@@ -273,6 +278,7 @@ button {
     opacity: .5;
     transition: 500ms ease-in-out;
     margin: auto;
+    order: 4;
 }
 
 .nav.opened {
@@ -329,6 +335,7 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 
 :where(.hero, .about, .experience, .projects, .skills, .contact) {
@@ -763,6 +770,14 @@ button {
     border: 1px solid var(--border-color);
     border-radius: .6rem;
     background: var(--bg-tertiary);
+    cursor: pointer;
+    transition: 750ms ease-in-out;
+}
+
+.skill-item:hover {
+    transform: scale(1.011);
+    background: var(--bg-secondary);
+    border: 1px solid var(--logo-brand-color-dark);
 }
 
 .skill-logo {
@@ -921,7 +936,7 @@ button {
     position: absolute;
     right: 12px;
     bottom: 12px;
-    z-index: 70;
+    z-index: 3;
     width: 44px;
     height: 44px;
     padding: 0;

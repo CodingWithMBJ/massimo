@@ -50,6 +50,7 @@ window.addEventListener("DOMContentLoaded", () => {
   const body = document.body;
   const main = document.getElementById("main");
   const header = document.getElementById("header");
+  const headerContainer = document.querySelector(".header-container");
   const nav = document.getElementById("nav");
   const menuBtn = document.getElementById("menuBtn");
 
@@ -87,7 +88,7 @@ window.addEventListener("DOMContentLoaded", () => {
   themeIndicator.classList.add("themeIndicator");
   themeButton.appendChild(themeIndicator);
 
-  if (window.innerWidth < 768) header.appendChild(themeButton);
+  if (window.innerWidth < 768) headerContainer.appendChild(themeButton);
   else main.appendChild(themeButton);
 
   body.classList.add("dark-theme");

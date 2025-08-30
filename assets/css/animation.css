@@ -44,9 +44,9 @@
 }
 
 /* Optional hooks */
-.nav.opened {
+/* .nav.opened {
     animation: navSlideDown 500ms cubic-bezier(.4, .2, .2, 1) both;
-}
+} */
 
 .nav-panel.from-right.opened {
     animation: actionNavSlide 450ms cubic-bezier(.4, .2, .2, 1) both;

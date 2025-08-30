@@ -1,26 +1,67 @@
 @media (min-width: 1024px) {
+
     .header {
-        position: fixed;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+
+    .header-container {
+        position: relative;
         left: 50%;
         transform: translateX(-50%);
         padding: 15px 10px;
         width: 100%;
-        max-width: 1200px;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
 
+    /* 
     .header.scrollingUp {
         transform: translate(-50%, -20vh);
+    } */
+
+    .nav-li-a::after {
+        bottom: -5px;
     }
 
+    .nav {
+        all: unset;
+
+    }
+
+    .nav-ul {
+        all: unset;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.8em;
+    }
+
+    .nav-li-a {
+        all: unset;
+        font-size: 1.5rem;
+        color: var(--text-primary);
+        cursor: pointer;
+        position: relative;
+    }
+
+    .logoLink {
+        order: 1;
+    }
+
+    .nav {
+        order: 2;
+    }
 
     .actionMenu {
+        display: none;
         padding: 10px;
         position: relative;
         width: fit-content;
         max-width: 150px;
+        order: 3;
     }
 
     .menuBtn {
@@ -37,6 +78,22 @@
         max-width: 850px;
     }
 
+    .main {
+        margin-top: 0;
+    }
+
+    :is(.about, .experience, .projects, .skills, .blog, .contact) {
+        display: flex;
+        min-height: 100vh;
+        justify-content: center;
+
+    }
+
+
+    :is(.hero, .about, .experience, .projects, .skills, .blog, .contact) {
+
+        align-items: center;
+    }
 
     :where(#experience, #projects, #skills, #blog, #contact) {
         max-width: 992px;
@@ -52,6 +109,13 @@
         justify-content: space-between;
         min-height: 70vh;
         margin: auto;
+    }
+
+    .skill-list,
+    .soft-grid {
+
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
     }
 
 }
