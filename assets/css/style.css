@@ -698,6 +698,12 @@ button {
 /* =========================
    SKILLS
    ========================= */
+
+
+#skills {
+    margin-top: 3rem;
+}
+
 .switchCategories {
     display: flex;
     gap: .5rem;
@@ -870,7 +876,7 @@ button {
     flex-direction: column;
     /* justify-content: center; */
     align-items: flex-start;
-    margin-top: 1.25rem;
+    margin-top: 4.25rem;
     padding: 16px;
     border: 1px solid var(--border-color);
     border-radius: 2rem;
